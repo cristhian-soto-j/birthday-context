@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import { NewsList } from "./components/NewsList";
 import { ReactQueryDevtools } from "react-query/devtools";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const queryClient = new QueryClient();
 

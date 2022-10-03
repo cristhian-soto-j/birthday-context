@@ -24,16 +24,16 @@ export const NewsList = ({ month, year }) => {
     return <div>Recuperando las noticias...</div>;
   }
   if (status === "error") {
-    return <div>Error</div>;
+    return <div>Error...no existen noticias con los datos entregados</div>;
   }
 
   return (
-    <div className="container container-cards">
-      <div className="newsCards">
+    <div>
+      <div>
         {data?.response.docs.map((news, index) => {
           if (index < 5) {
             return (
-              <div className="card" key={news._id}>
+              <div key={news._id}>
                 <NewsCard news={news} />
               </div>
             );

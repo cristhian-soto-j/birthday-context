@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { BirthdayContext } from "../BirthdayContext";
-import { Button } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Button, Form } from "react-bootstrap";
+
+import "../styles/DatePicker.css";
 
 export const DatePicker = () => {
   const [date, setDate] = useState("");
@@ -18,7 +18,7 @@ export const DatePicker = () => {
     const year = date.split("-")[0];
 
     return (
-      <div className="container container-general">
+      <div className="birthday-context">
         <BirthdayContext month={month} year={year} />
         <Button variant="primary" type="submit" onClick={handleClick}>
           Reset
@@ -27,8 +27,20 @@ export const DatePicker = () => {
     );
   } else {
     return (
-      <div className="container-form">
+      <div className="intro-card-container">
+        <p className="intro-text">
+          Selecciona tu fecha de nacimiento para conocer cinco noticias
+          publicadas, el mes y año en el que naciste, por el diario "The New
+          York Times"
+        </p>
+        {/* <img
+            className="ny-logo"
+            alt="The New York Times"
+            src="https://mwcm.nyt.com/.resources/mkt-wcm/dist/libs/assets/img/logo-nyt-header.svg"
+          ></img> */}
+
         <Form.Control
+          className="date-picker"
           type="date"
           name="date_of_birth"
           placeholder="DateRange"

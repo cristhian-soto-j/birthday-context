@@ -1,0 +1,83 @@
+#root {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+.btn{
+    margin: 50px auto 100px auto;
+}
+.birthday-context {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+.intro-card-container {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e7e9de;
+  margin: auto 5px auto 5px;
+}
+.date-picker {
+  text-align: center;
+}
+
+p {
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ny-logo {
+  width: 150px;
+  margin: auto 5px auto 5px;
+}
+
+.date-picker {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #e7e9de;
+  font-weight: 600;
+  color: #000;
+  border: 1px solid #626060;
+}
+
+.intro-text {
+  font-size: 1rem;
+}
+
+/* //Pantallas pequeñas (móviles en landscape de más de 576px) */
+@media (min-width: 576px) {
+  .intro-card-container {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e7e9de;
+    margin: auto 10px auto 10px;
+  }
+}
+
+/* //Pantallas medianas (tablets de más de 768px) */
+@media (min-width: 768px) {
+  .intro-card-container {
+    padding: 10px;
+    margin: auto 30px auto 30px;
+  }
+}
+
+/* //Pantallas grandes (desktops de más de 992px) */
+@media (min-width: 992px) {
+  .intro-card-container {
+    padding: 10px;
+    margin: auto 50px auto 50px;
+  }
+}
+
+/* //Pantallas muy grandes (desktops de más de 1200px) */
+@media (min-width: 1200px) {
+  .intro-card-container {
+    padding: 10px;
+    margin: auto 100px auto 100px;
+  }
+}
