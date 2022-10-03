@@ -8,27 +8,32 @@
   background-color: #e7e9de;
   color: #000;
   border: none;
-  margin: 10px auto 10px auto;
+  margin-top: 10px;
 }
 
 .btn:first-child:hover {
   background-color: #e7e9de;
   color: #000;
   border: none;
-  margin: 10px auto 10px auto;
+  margin-top: 10px;
+
 }
 .btn:last-child:hover {
-  margin: 50px auto 50px auto;
+  background-color: #e7e9de;
+  color: #000;
+  border: none;
+  margin-top: 10px;
+
 }
 .newscard {
   display: grid;
   align-items: center;
   justify-content: center;
-  margin: auto 20px;
+  margin: 30px auto ;
 }
 
 .card {
-  margin: auto;
+  margin: 30px auto ;
   padding: 5px;
   max-width: 70%;
 }
@@ -57,7 +62,7 @@ hr.separator {
     margin: 15px auto;
   }
   .newscard {
-    margin: auto 30px;
+    margin: 30px auto ;
   }
   hr.separator {
     margin: 20px auto;
@@ -70,7 +75,7 @@ hr.separator {
     margin: 15px auto;
   }
   .newscard {
-    margin: auto 50px;
+    margin: 30px auto ;
   }
   hr.separator {
     margin: 30px auto;
@@ -83,7 +88,7 @@ hr.separator {
     margin: 15px auto;
   }
   .newscard {
-    margin: auto 50px;
+    margin: 30px auto ;
   }
   hr.separator {
     margin: 40px auto;

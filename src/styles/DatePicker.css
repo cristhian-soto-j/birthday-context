@@ -4,9 +4,7 @@
   place-items: center;
   justify-content: center;
 }
-.btn{
-    margin: 50px auto 100px auto;
-}
+
 .birthday-context {
   height: 100vh;
   display: grid;
